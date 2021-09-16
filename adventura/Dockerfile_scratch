@@ -1,0 +1,14 @@
+FROM scratch
+
+LABEL maintainer="Stano"
+LABEL description="Escape room - adventure game"
+
+ADD alpine-minirootfs-3.14.2-x86_64.tar.gz /
+ADD app.tar.gz /
+
+WORKDIR /app
+
+RUN apk add py3-pip
+
+CMD ["python3", "main.py"]
+
