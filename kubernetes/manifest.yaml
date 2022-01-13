@@ -74,8 +74,6 @@ status:
     type: Progressing
   observedGeneration: 1
   replicas: 1
-  unavailableReplicas: 3
-  updatedReplicas: 3
 ---
 apiVersion: v1
 kind: Service
